@@ -1,0 +1,160 @@
+
+@import url(highlight-printing.css);
+
+#TableOfContents {
+    border:	solid 0.5px black;
+    margin-left:  0px;
+    margin-right: 0px;
+    padding-left: 1ex;
+    padding-right: 1ex;
+}
+
+
+:root {
+    --decoration-color:transparent;
+    --decoration-text-color:black;
+    --toc-shade:transparent;
+    text-align:var(--print-justification);
+    font-family:Serif;
+    text-justify:inter-word;
+    font-size:10pt;
+
+}
+
+
+a {
+   text-decoration-line:none;
+   color:black;
+}
+
+main a {
+    font-weight: bold;
+}
+
+#TableOfContents li > a {
+    text-decoration-line:none;
+    color:black;
+    font-weight: bold;
+}
+
+header, footer, #nav-area {
+    background: transparent;
+    color:black;
+}
+
+#nav-area {
+    display:none;
+}
+
+#footer-links {
+    display:none;
+}
+
+header {
+    padding: 1em;
+    margin: 0px;
+    background: transparent;
+    border:solid 0.5px black;
+}
+
+p::first-letter {
+    color: black;
+}
+
+#copyright {
+    display:block;
+    float:none;
+    margin:0px;
+    font-size:80%;
+}
+
+#source-url {
+    color:black;
+    font-size:80%;
+    margin:0px;
+    font-weight: normal;
+}
+
+#source-url > a {
+
+}
+
+/* hacks for overriding the source code hacks. Ugly. */
+
+.chroma, code, .chroma .lnt {
+    color: black;
+}
+
+.chroma .lnt {
+    padding-right:2em;
+    padding-left:1em;
+}
+
+.chroma .hl > .lnt {
+    border-left: solid black 2px;
+    padding-top: 0.2ex;
+    padding-bottom: 0.2ex;
+    padding-left:calc(1em - 2px);
+}
+
+.chroma .hl {
+    background:inherit;
+}
+
+.chroma .lnt {
+    font-size:70%;
+}
+
+code, .chroma code {
+    font-size:100%;
+    font-weight:inherit;
+    font-style:normal;
+}
+
+
+pre > code, .chroma, .chroma code, .chroma .lnt {
+    line-height:2.4ex;
+}
+
+.highlight {
+    padding-left: 1.5em;
+}
+
+.highlight .lntable {
+    margin-left: calc(0px - 0.5em );
+}
+
+pre {
+    padding-left: 1.5em;
+}
+
+.highlight, pre {
+    border: solid black 1px;
+    padding-top: 2ex;
+    padding-bottom: 2ex;
+    margin-top: 5ex;
+    margin-bottom: 5ex;        	
+}
+
+.highlight pre {
+    border: none;
+    padding-left:0px;
+    padding-top: 0ex;
+    padding-bottom: 0ex;
+    margin-top: 0ex;
+    margin-bottom: 0ex;
+}
+
+footer, #source-url, #copyright, pre, code, .highlight {
+    page-break-before:avoid;
+}
+
+main p, footer, code, pre {
+    page-break-inside:avoid;
+}
+
+.disclaimer-sections{
+    background: inherit;
+    padding:0px;
+}
+

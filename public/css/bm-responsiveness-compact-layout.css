@@ -1,0 +1,33 @@
+@media screen {
+    
+    h1 { color: var(--decoration-color); }
+    header { background:none }
+
+    #nav-area { float:none }
+
+    header {
+	margin:0px;
+	padding:0px;
+	display:block;
+    }
+
+    #nav-area, footer {
+	margin-left: calc(0px - var(--small-padding));
+	padding-left: var(--small-padding);
+	margin-right: calc(0px - var(--small-padding));
+	padding-right: var(--small-padding);
+    }
+
+    body {
+	margin-left:var(--small-padding);
+	margin-right:var(--small-padding);
+    }
+
+    nav > a:last-child {
+	margin-bottom:calc(2 * var(--small-padding));
+    }
+    
+}
+
+
+

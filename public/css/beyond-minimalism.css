@@ -1,0 +1,149 @@
+/* The MIT License (MIT)
+ *
+ * Copyright (c) 2022 M E Leypold
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the
+ * "Software"), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish,
+ * distribute, sublicense, and/or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to
+ * the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included
+ * in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+p::first-letter {
+    color: var(--decoration-color);
+    font-weight: bold;
+}
+
+
+li > p::first-letter {
+    color: inherit;
+    font-weight: inherit;
+}
+
+#source-url::first-letter {
+    color: inherit;
+    font-weight: inherit;
+}
+
+#source-url {
+    color:var(--light-text-color);
+    font-size:80%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*
+ * This is what I need when markdown lists created <p> tags around the
+ * list item text. The effect is now gone, but I'm not currently sure
+ * that this is forever. So we'll leave this for the moment.
+ *
+
+li>p::before {
+    content:var(--bullet-character);
+    color:var(--bullet-color);
+    width:var(--bullet-width);
+    display: inline-block;
+    margin-left: calc(0px - var(--bullet-width));
+}
+*/
+
+li {
+    margin-top: 1ex;
+}
+
+
+ul li::before {
+    content:var(--bullet-character);
+    color:var(--bullet-color);
+    width:var(--bullet-width);
+    display: inline-block;
+    margin-left: calc(0px - var(--bullet-width));
+}
+
+
+code {
+    font-size:120%;   /* unfortunately only empirical, TODO: explain */
+    color:var(--light-text-color);
+    font-weight: bold;
+}
+
+pre > code {
+    line-height:120%; /* empirical, TODO: explain */
+}
+
+.chroma > code {
+    font-size:120%;
+    line-height:180%;
+}
+
+
+#TableOfContents{
+    background: var(--toc-shade);
+    padding-top:1ex;
+    padding-bottom:1ex;
+    margin-left:calc(var(--header-margin) - var(--body-margin));
+    margin-right:calc(var(--header-margin) - var(--body-margin));
+    padding-left:calc( var(--body-margin) - var(--header-margin));
+    padding-right:calc( var(--body-margin) - var(--header-margin));
+}
+
+#TableOfContents li {
+    color: var(--light-text-color);
+}
+
+#TableOfContents ol ol {
+    list-style-type: lower-alpha;
+}
+
+#TableOfContents ol ol ol {
+    list-style-type: lower-greek;
+}
+
+#TableOfContents li > a {
+    color: blue;
+    /* text-decoration-line:none; */ /* propose not to use this */
+}
+
+.banner {
+    background: var(--toc-shade);
+    display: block;
+    padding:0.5em;
+    margin:0.2em;
+    font-size: 400%;
+    color:var(--light-text-color);
+}
+
+.booktable {
+    width:100%;
+}
+
+.disclaimer-list{
+    padding-left: var(--bullet-width);
+    font-size: 80%;
+}
+
+.disclaimer-sections{
+    font-size: 80%;
+    background: var(--toc-shade);
+    margin-top:5ex;
+    padding-left: 1em;
+    padding-top: 1ex;
+    padding-right: 2em;
+    padding-bottom:1ex;
+}
+

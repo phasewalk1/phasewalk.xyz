@@ -1,0 +1,18 @@
+@media screen {
+
+:root {
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+#menu-button{
+    font-size:calc( 1.5 * 100%);
+    margin-right: calc(0px - var(--small-padding) / 2 - 3px); /* no idea, why now 3px */
+    padding:1ex;
+}
+
+#nav-area {
+    padding-top:1ex;
+}
+
+}
+

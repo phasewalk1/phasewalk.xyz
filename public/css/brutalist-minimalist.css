@@ -1,0 +1,138 @@
+/* The MIT License (MIT)
+ * 
+ * Copyright (c) 2022 M E Leypold
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the
+ * "Software"), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish,
+ * distribute, sublicense, and/or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to
+ * the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included
+ * in all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+    
+:root {    
+    /* --------------------------------------------------------------------
+     * Relevant footer measures are the same as the header measures.
+     */
+    
+    --footer-margin:          var(--header-margin);
+    --footer-padding:         var(--header-padding);
+
+    --response-limit-no-title: 13em;
+    
+    /* -------------------------------------------------------------------- */
+
+    color:var(--text-color);
+}
+
+body {
+    margin-left:var(--body-margin);
+    margin-right:var(--body-margin);
+}
+
+header, footer, #nav-area {
+    display:block;
+    background:var(--decoration-color);
+    color:var(--decoration-text-color);
+    padding:var(--small-padding);
+}
+
+header > h1 > a, header > * > h1 > a {
+    text-decoration-line:none;
+}
+
+
+header {
+    margin-left:calc(var(--header-margin) - var(--body-margin));
+    margin-right:calc(var(--header-margin) - var(--body-margin));
+    padding-left:calc( var(--body-margin) - var(--header-margin));
+    padding-right:calc( var(--body-margin) - var(--header-margin));
+}
+
+#nav-area {
+    display:block;
+    float: right;
+}
+
+header > a, header > * > a, nav > a {
+    color:var(--decoration-text-color)
+}
+
+footer {
+    display:block;
+    margin-left:calc(var(--footer-margin) - var(--body-margin));
+    margin-right:calc(var(--footer-margin) - var(--body-margin));
+    padding-left:calc( var(--body-margin) - var(--footer-margin));
+    padding-right:calc( var(--body-margin) - var(--footer-margin));
+    margin-top:calc(3*var(--small-padding));
+}
+
+#copyright {
+    display:block;
+    text-align:left;
+    float:left;
+}
+
+#footer-links {
+    display:block;
+    text-align:right;
+}
+
+footer > * > a, footer > a {color:var(--decoration-text-color)}
+
+.page-summary > p:first-child, .post-summary > p:first-child, li > p:first-child {
+    display:inline;
+}
+
+
+li > p {
+    display:inline;    
+}
+
+#menu-button {
+    display:none;
+}
+
+.booktable {
+    border-collapse: separate;
+    border: solid var(--decoration-line-color) 1px;
+    padding-right: 1em;
+}
+
+.booktable th {
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+    font-style:  italic;
+    color: var(--light-text-color);
+    background: var(--toc-shade);
+    padding: 0.1em;
+    padding-top: 0.5ex;
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: 80%;
+    white-space: nowrap;
+}
+
+.booktable td {
+    padding-top: 0.5ex;
+    padding-bottom: 0.5ex;    
+}
+
+
+.booktable td {
+    padding-left: 1em;
+}
+

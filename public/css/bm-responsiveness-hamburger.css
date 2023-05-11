@@ -1,0 +1,58 @@
+@media screen {
+
+    h1 {font-size: 150% }
+    
+    nav {display:none}
+
+    #nav-area{
+	display:block;
+	margin-left:var(--small-padding);
+	margin-bottom:var(--small-padding);
+	padding-top:0px;
+    }
+
+    nav {
+	margin-top:var(--small-padding);
+    }
+
+    nav > a {
+	text-decoration-line: none;
+    }
+
+    nav > a:first-child {
+	margin-top:calc(2 * var(--small-padding) * 2) ;
+    }
+
+    #menu-button:after{
+	content:'☰'
+    }
+
+    #menu-button{
+	display:inline;
+	font-size:calc( 2 * 100%); */
+	padding:0px;
+	margin:0px;
+	/* margin-bottom:var(--small-padding); */
+	margin-top:calc(0px - var(--small-padding));
+	padding-right: var(--small-padding);
+	padding-left:  var(--small-padding);
+	padding-bottom: var(--small-padding);
+	margin-right: calc(0px - var(--small-padding) / 2 - 1px);
+    }
+    
+    #menu-toggle:checked + *>nav {
+	display: flex;
+    }
+
+    #menu-toggle:checked + *> #menu-button {
+	background:var(--decoration-line-color);
+	color:var(--decoration-color);
+	border-right: solid var(--decoration-color) 1px;
+	border-top: solid var(--decoration-color) 1px;
+    }
+
+    #menu-toggle:checked + #nav-area {
+	border:solid var(--decoration-line-color) var(--decoration-line-width);
+    }
+}
+

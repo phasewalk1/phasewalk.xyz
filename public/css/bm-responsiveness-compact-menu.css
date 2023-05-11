@@ -1,0 +1,27 @@
+@media screen  {
+    nav, #nav-area {
+	display: flex;
+	flex-direction: column;
+	text-align:right;
+    }
+
+    #nav-area {
+	text-align:right;
+	margin:0px;
+	margin-right:calc(var(--header-margin) - var(--body-margin));
+	margin-top:calc(0px - var(--small-padding));
+    }
+
+    header {
+	/* get rid of padding-top? */
+    }
+
+    footer {
+	margin-right:calc(var(--footer-margin) - var(--body-margin));
+	padding-right:var(--small-padding);
+    }
+    
+    #subtitle{
+	display:none
+    }
+}
