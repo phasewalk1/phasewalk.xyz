@@ -23,6 +23,10 @@
   clear: both;
 }
 
+.margbot {
+    margin-bottom: 30px;
+}
+
 .hide-text {
   font: 0/0 a;
   color: transparent;
