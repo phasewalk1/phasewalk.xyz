@@ -5,6 +5,16 @@
     <link>https://example.com/tags/</link>
     <description>Recent content in Tags on phasewalk</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 11 May 2023 00:34:47 -0700</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HARMONIC UNFOLDING</title>
+      <link>https://example.com/tags/harmonic-unfolding/</link>
+      <pubDate>Thu, 11 May 2023 00:34:47 -0700</pubDate>
+      
+      <guid>https://example.com/tags/harmonic-unfolding/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
