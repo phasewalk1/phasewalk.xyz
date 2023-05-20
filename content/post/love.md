@@ -4,6 +4,7 @@ date: 2023-05-12T13:20:19-07:00
 draft: false
 tags: [NETWORK SPIRITUALITY]
 categories: [QUOTE]
+description: "Forever, and Online."
 ---
 
 

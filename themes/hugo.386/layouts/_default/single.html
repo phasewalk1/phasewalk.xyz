@@ -2,9 +2,12 @@
 
 <div class="row-fluid navmargin">
     <div class="page-header">
-        <h1>{{ .Title }} - {{ .Date.Format "Mon, Jan 2, 2006" }}</h1>
+        <h1>{{ .Title }} - {{ .Date.Format "Mon, Jan 2, 2006" }}; Categories: [{{ range .Params.Categories}}{{ . }}{{end}}],
+        Tags: [{{ range .Params.Tags}}{{ . }}{{end}}]
+        </h1>
     </div>
-    <p class="lead">{{ .Params.description }}</p>
+    <p class="lead">{{ .Params.description }}
+    </p>
     {{ .Content }}
     <h4><a href="{{ .Site.BaseURL }}">{{ i18n "backtohome" }}</a></h4>
 </div>
