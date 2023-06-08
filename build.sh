@@ -1,4 +1,6 @@
 cd "$(dirname "$0")"
+git submodule sync
+git submodule update --init --recursive
 cd phasewalk1.me
 trunk build
 cd ..
