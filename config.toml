@@ -10,6 +10,8 @@ block = true
 title = true
 
 [params]
+mailto = "kat@phasewalk.net"
+card = "https://phasewalk1.github.io/card"
 # The name to display as main title in the home page
 mainpagetitle = "LET'S ALL LOVE LAIN"
 
@@ -55,6 +57,12 @@ identifier = "post"
 name = "All posts"
 url = "/post/"      # The path can lead to a content folder too.
 weight = 20
+
+[[menu.main]]
+identifier = "card"
+name = "Card"
+url = "/card/"
+weight = 30
 
 [taxonomies]
 category = "categories"
