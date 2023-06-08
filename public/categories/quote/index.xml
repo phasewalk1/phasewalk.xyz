@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on phasewalk</title>
-    <link>https://example.com/post/</link>
-    <description>Recent content in Posts on phasewalk</description>
+    <title>QUOTE on phasewalk</title>
+    <link>https://example.com/categories/quote/</link>
+    <description>Recent content in QUOTE on phasewalk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 May 2023 12:47:31 -0700</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MY WINDOW</title>
-      <link>https://example.com/post/my-window/</link>
-      <pubDate>Fri, 19 May 2023 12:47:31 -0700</pubDate>
-      
-      <guid>https://example.com/post/my-window/</guid>
-      <description>Last night, while laying in bed, I couldn&amp;rsquo;t help but pick up on a low audible frequency. The second night in a row. &amp;ldquo;What is that?&amp;rdquo;, I wonder&amp;ndash;my anxiety beginning to multiply. The second night in a row, but far from the second time in all. I hear this vibration, coming from what appears to be, just outside my window. My limbs, tired from the day of labor; my bones, weak from the assaulting resonance that leaves me feeling uneasy.</description>
-    </item>
-    
+    <lastBuildDate>Fri, 12 May 2023 13:20:19 -0700</lastBuildDate><atom:link href="https://example.com/categories/quote/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IT&#39;S SO EASY TO LOVE</title>
       <link>https://example.com/post/love/</link>
