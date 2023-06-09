@@ -16,8 +16,13 @@ jobs:
 
     steps:
     - name: Checkout
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
 
+    - name: Trunk-Inject
     - uses: jetli/trunk-action@v0.4.0
-    - name: trunk-build
+    
+    - name: Sync-Submodules
+      run: git submodule update --remote
+
+    - name: Trunk-Build
       run: cd phasewalk1.me && trunk build
