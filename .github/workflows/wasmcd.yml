@@ -17,7 +17,7 @@ jobs:
         uses: jetli/trunk-action@v0.4.0
       
       - name: Sync-submodule
-        run: git submodule update --remote
+        run: git submodule init && git submodule update --recursive --remote
       
       - name: Trunk-Build
         run: cd phasewalk1.me && trunk build
