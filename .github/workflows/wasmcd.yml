@@ -15,6 +15,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       
+      - name: Cache
+        uses: actions/cache@v1.2.1
+        with:
+          path: public/
+          key: ${{ secrets.CACHE_KEY }}
+
       - name: Inject Trunk
         uses: jetli/trunk-action@v0.4.0
         
