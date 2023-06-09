@@ -7,14 +7,19 @@ jobs:
       contents: read
       deployments: write
     name: WASM-CD
+    defaults:
+      run:
+        shell: bash
+      
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      # Run a build step here if your project requires
       
       - name: Inject Trunk
         uses: jetli/trunk-action@v0.4.0
+        
+      - name: Inject Hugo
+        uses: peaceiris/actions-hugo@v2
         
       - name: Target Wasm
         run: rustup target add wasm32-unknown-unknown
@@ -26,15 +31,14 @@ jobs:
         run: cd phasewalk1.me && trunk build
         
       - name: Reflect Artifacts
-        run: bash build.sh
+        run: bash build.sh && hugo
+        
+      
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_KEY }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT }}
-          projectName: phasewalk1.xyz
-          directory: public
-          # Optional: Switch what branch you are publishing to.
-          # By default this will be the branch which triggered this workflow
-          branch: main
+          projectName: phasewalk1
+          directory: /public
