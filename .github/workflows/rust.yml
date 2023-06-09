@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Trunk-Inject
-    - uses: jetli/trunk-action@v0.4.0
+      uses: jetli/trunk-action@v0.4.0
     
     - name: Sync-Submodules
       run: git submodule update --remote
