@@ -38,4 +38,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_KEY }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT }}
-          command: pages publish --project-name=phasewalk1
+          command: pages deploy --project-name=phasewalk1
