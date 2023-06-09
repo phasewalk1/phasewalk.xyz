@@ -31,17 +31,11 @@ jobs:
         run: cd phasewalk1.me && trunk build
         
       - name: Reflect Artifacts
-        run: bash build.sh && hugo
-        
-      - name: Cache
-        uses: actions/cache@v1.2.1
-        with:
-          path: public/
-          key: ${{ secrets.CACHE_KEY }}
-      
+        run: bash build.sh && hugo     
 
-      - name: Deplpoy
+      - name: Deploy
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_KEY }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT }}
+          command: pages publish --project-name=phasewalk1
