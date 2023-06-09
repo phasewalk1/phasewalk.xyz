@@ -6,20 +6,23 @@ jobs:
     permissions:
       contents: read
       deployments: write
-    name: Publish to Cloudflare Pages
+    name: WASM-CD
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
       # Run a build step here if your project requires
       
-      - name: Trunk-Inject
+      - name: Inject Trunk
         uses: jetli/trunk-action@v0.4.0
+        
+      - name: Target Wasm
+        run: rustup target add wasm32-unknown-unknown
       
-      - name: Sync-submodule
+      - name: Sync Submodules
         run: git submodule init && git submodule update --recursive --remote
       
-      - name: Trunk-Build
+      - name: Trunk Build
         run: cd phasewalk1.me && trunk build
         
       - name: Reflect Artifacts
