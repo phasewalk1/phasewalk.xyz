@@ -57,12 +57,12 @@ Now that we've scratched the surface of functional programming, and The Lambda C
 
 <h2>Programming in Lisp</h2>
 A programmer sees the following code and suddenly, feels uneasy.
-    ```Lisp
+```Lisp
 (* (+ 2 (* 4 6))
  (+ 3 5 7))
-    ```
-    That's fair. The first time I interacted with Lisp code I felt like it was time to go outside: I've seen enough! It wasn't until about a half-an-hour into my journey did the mystery begin to unravel itself into a beautiful tree of recursion.
+```
+That's fair. The first time I interacted with Lisp code I felt like it was time to go outside: I've seen enough! It wasn't until about a half-an-hour into my journey did the mystery begin to unravel itself into a beautiful tree of recursion.
 
-    The block of code above uses the concept of _combinations_ to recursively evaluate the lambda expression. This recursive evaluation uses the concept of substitution (_Beta Reduction_) to compute the output, and it's flow can be modeled by a tree:
+The block of code above uses the concept of _combinations_ to recursively evaluate the lambda expression. This recursive evaluation uses the concept of substitution (_Beta Reduction_) to compute the output, and it's flow can be modeled by a tree:
 
 {{< figure src="/Expression.png" >}}
