@@ -10,6 +10,7 @@ block = true
 title = true
 
 [params]
+math = true
 mailto = "kat@phasewalk.net"
 card = "https://phasewalk1.github.io/card"
 # The name to display as main title in the home page
