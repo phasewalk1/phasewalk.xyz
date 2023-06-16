@@ -2,19 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on phasewalk</title>
-    <link>https://example.com/tags/</link>
+    <link>https://phasewalk.xyz/tags/</link>
     <description>Recent content in Tags on phasewalk</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 12 May 2023 13:20:19 -0700</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>NETWORK SPIRITUALITY</title>
-      <link>https://example.com/tags/network-spirituality/</link>
-      <pubDate>Fri, 12 May 2023 13:20:19 -0700</pubDate>
-      
-      <guid>https://example.com/tags/network-spirituality/</guid>
-      <description></description>
-    </item>
-    
+    <language>en</language><atom:link href="https://phasewalk.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
