@@ -98,7 +98,7 @@ summaryLength = 70  # number of words for article summaries
     # useful if deploying in gitlab pages with custom domain and don't want
     # the username.gitlab.io/website url to persist
     # this requires you to set baseURL (see above)
-    forceRedirect = false
+    forceRedirect = true
 
     infiniteScrolling = false  # activates infinite scrolling instead of regular pagination
     enableFooterColumns = false  # activates footer columns, as described below

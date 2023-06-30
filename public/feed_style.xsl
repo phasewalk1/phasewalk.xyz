@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <meta charset="UTF-8"/>
         
-        <link type="text/css" rel="stylesheet" href="https://example.com/css/styles.3a2588867760706cd8cffa7c8f3ec09614dc6edc5691e92add5929b4e7318dffac4251e5cc0029b95e1b099075aa175e4275cfa4e17618437954ad6527a2e79b.css" integrity="sha512-OiWIhndgcGzYz/p8jz7AlhTcbtxWkekq3VkptOcxjf+sQlHlzAApuV4bCZB1qhdeQnXPpOF2GEN5VK1lJ6Lnmw==" />
+        <link type="text/css" rel="stylesheet" href="https://phasewalk1.xyz/css/styles.f689e2f524f255fad94bf3bfa80ffd7a6c4eda6f6a2edb5cb68a6603392bae4b59ac2e5fc80348a534043eba15ecaccd54319da8a1b7583f0ef4c9fa11a79b87.css" integrity="sha512-9oni9STyVfrZS/O/qA/9emxO2m9qLttctopmAzkrrktZrC5fyANIpTQEProV7KzNVDGdqKG3WD8O9Mn6Eaebhw==" />
         <style>
           .aboutfeeds {
             margin: 24px 0; padding: 12px;

@@ -19,7 +19,7 @@
         
         
     
-    "articles": [{"date":"2023-05-19","image":"/moving-formation2.gif","imageAlt":"","link":"https://example.com/posts/my_window/","summary":"There's this noise I always hear","tags":["MISC"],"title":"My Window"}],
+    "articles": [{"date":"2023-05-19","image":"/moving-formation2.gif","imageAlt":"","link":"https://phasewalk1.xyz/posts/my_window/","summary":"There's this noise I always hear","tags":["MISC"],"title":"My Window"}],
     "test": "My Window   ",
     "page": "1",
     "next": ""
