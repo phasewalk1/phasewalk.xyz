@@ -4,7 +4,7 @@ date: 2023-05-19T12:47:31-07:00
 draft: false
 description: "There's this noise I always hear"
 tags: [MISC]
-image: /moving-formation2.gif
+image: /my_window.jpg
 ---
 
 Last night, while laying in bed, I couldn't help but pick up on a low audible frequency. The second night in a row. "What is that?", I wonder--my anxiety beginning to multiply.

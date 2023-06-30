@@ -4,7 +4,6 @@ date: 2023-06-28T12:30:21-16:00
 draft: false
 description: "Music-based Recommendation Systems in production"
 tags: [ML, Music]
-featured: true
 image: /hnc.png
 ---
 

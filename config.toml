@@ -54,10 +54,10 @@ summaryLength = 70  # number of words for article summaries
     contentWidth = "1000px"  # maximum width of the site content, css syntax
 
     paperCards = true  # enable paper card style; default false
-    buttonTags = false  # enable button tag style; default false
+    buttonTags = true  # enable button tag style; default false
     tagsInArticlePreview = true  # enable tags list in the article preview card
-    gridView = true  # show post list as a grid. goes well with paperCards
-    bigArticleTitle = false  # makes the title in the single article view bigger
+    gridView = false  # show post list as a grid. goes well with paperCards
+    bigArticleTitle = true  # makes the title in the single article view bigger
     navtype = "standard"  # changes the style of the pagination, available styles are: "standard", "circles"
     enableShadow = true  # shows a shadow around some elements
     menuStyle = "buttons"  # changes the style of the main site navigation menu, available styles are: "standard", "buttons"
