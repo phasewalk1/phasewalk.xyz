@@ -114,11 +114,6 @@ summaryLength = 70  # number of words for article summaries
     # other elements in this menu are added automatically from the "pages" folder
     # the folder it will look into can be customized with the pages variable
     # in params above
-    [[menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about/"
-        weight = 10
     [[menu.icons]]
         identifier = "github"
         name = "GitHub"
