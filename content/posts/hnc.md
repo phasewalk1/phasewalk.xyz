@@ -75,7 +75,8 @@ struct Song
 };
 ```
 Now, to train the model, we‘ll create dataframes over the two datasets. We’ll then merge the two so that they look something like this:
-![[Pasted image 20230628025222.jpg]]
+
+{{< figure src="/df_example.jpg" title="> An example *merged* and *normalized* training dataframe" >}}
 
 Since the `listen_count` field is a highly variant field (can range from 0 to 1,000+) we will want to normalize it across the dataset. We can do this using [zscore normalization](https://www.statology.org/z-score-normalization/) which is simple in *numpy*. We will also likely want to drop any rows with abnormally high play counts (above 20,000 for example) before performing normalization so that artificially inflated values don’t skew the deviation maliciously.
 
