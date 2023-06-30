@@ -2,24 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://phasewalk.xyz/post/functionalprog/</loc>
-    <lastmod>2023-06-16T13:27:22-07:00</lastmod>
+    <loc>https://example.com/about/about/</loc>
+    <lastmod>2023-06-29T22:30:35-07:00</lastmod>
   </url><url>
-    <loc>https://phasewalk.xyz/</loc>
-    <lastmod>2023-06-16T13:27:22-07:00</lastmod>
+    <loc>https://example.com/about/</loc>
+    <lastmod>2023-06-29T22:30:35-07:00</lastmod>
   </url><url>
-    <loc>https://phasewalk.xyz/post/</loc>
-    <lastmod>2023-06-16T13:27:22-07:00</lastmod>
+    <loc>https://example.com/</loc>
+    <lastmod>2023-06-29T22:30:35-07:00</lastmod>
   </url><url>
-    <loc>https://phasewalk.xyz/categories/</loc>
+    <loc>https://example.com/posts/hnc/</loc>
+    <lastmod>2023-06-28T12:30:21-16:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/ml/</loc>
+    <lastmod>2023-06-28T12:30:21-16:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/music/</loc>
+    <lastmod>2023-06-28T12:30:21-16:00</lastmod>
+  </url><url>
+    <loc>https://example.com/posts/</loc>
+    <lastmod>2023-06-28T12:30:21-16:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/</loc>
+    <lastmod>2023-06-28T12:30:21-16:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/misc/</loc>
     <lastmod>2023-05-19T12:47:31-07:00</lastmod>
   </url><url>
-    <loc>https://phasewalk.xyz/categories/misc/</loc>
+    <loc>https://example.com/posts/my_window/</loc>
     <lastmod>2023-05-19T12:47:31-07:00</lastmod>
   </url><url>
-    <loc>https://phasewalk.xyz/post/my-window/</loc>
-    <lastmod>2023-05-19T12:47:31-07:00</lastmod>
+    <loc>https://example.com/categories/</loc>
   </url><url>
-    <loc>https://phasewalk.xyz/tags/</loc>
+    <loc>https://example.com/manifest/index.json</loc>
+  </url><url>
+    <loc>https://example.com/search/</loc>
   </url>
 </urlset>

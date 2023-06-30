@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on phasewalk</title>
+    <link>https://example.com/posts/</link>
+    <description>Recent content in Posts on phasewalk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyleft</copyright>
+    <lastBuildDate>Wed, 28 Jun 2023 12:30:21 -1600</lastBuildDate><atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hybrid Neural Collaboration</title>
+      <link>https://example.com/posts/hnc/</link>
+      <pubDate>Wed, 28 Jun 2023 12:30:21 -1600</pubDate>
+      
+      <guid>https://example.com/posts/hnc/</guid>
+      <description>This document is an evolving draft.
+Much of the thought process behind this article is unique to our application, and primarily, the task of integration with our backend architecture. This document concerns itself with laying out proposed implementation architectures and discussing how they would fit into our existing application. Some of this information might not be relevant to you if you&amp;rsquo;re only interested in learning about MBRS’s (Music Based Recommendation Systems) and less about designing and deploying the pipeline that integrates into a distributed system.</description>
+    </item>
+    
+    <item>
+      <title>My Window</title>
+      <link>https://example.com/posts/my_window/</link>
+      <pubDate>Fri, 19 May 2023 12:47:31 -0700</pubDate>
+      
+      <guid>https://example.com/posts/my_window/</guid>
+      <description>Last night, while laying in bed, I couldn&amp;rsquo;t help but pick up on a low audible frequency. The second night in a row. &amp;ldquo;What is that?&amp;rdquo;, I wonder&amp;ndash;my anxiety beginning to multiply. The second night in a row, but far from the second time in all. I hear this vibration, coming from what appears to be, just outside my window. My limbs, tired from the day of labor; my bones, weak from the assaulting resonance that leaves me feeling uneasy.</description>
+    </item>
+    
+  </channel>
+</rss>

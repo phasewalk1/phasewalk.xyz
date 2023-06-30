@@ -5,11 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
 
-    
-        
-          <link href="https://example.com/about/index.xml" rel="alternate" type="application/rss+xml" title="phasewalk" />
-          <link href="https://example.com/about/index.xml" rel="feed" type="application/rss+xml" title="phasewalk" />
-        
     <link
     rel="icon"
     href='/favicon.png'
@@ -32,7 +27,7 @@
 
 <title>
         
-            Abouts  &ndash;
+            Search  &ndash;
         
         phasewalk
     </title>
@@ -42,36 +37,52 @@
     <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
 
     
-        <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
-    
     
     <link type="text/css" rel="stylesheet" href=https://example.com/css/styles.3a2588867760706cd8cffa7c8f3ec09614dc6edc5691e92add5929b4e7318dffac4251e5cc0029b95e1b099075aa175e4275cfa4e17618437954ad6527a2e79b.css integrity="sha512-OiWIhndgcGzYz/p8jz7AlhTcbtxWkekq3VkptOcxjf&#43;sQlHlzAApuV4bCZB1qhdeQnXPpOF2GEN5VK1lJ6Lnmw==" />
 <meta name="author" content="" />
 
     
+    
+        <meta name="description" content="" />
+    
 
 <meta property="og:site_name"
     content='phasewalk' />
 
-    <meta property="og:title"
-        content='phasewalk' />
+    <meta property="og:title" content="Search" />
+    <meta property="og:type" content="article" />
     
-    <meta property="og:type" content="blog" />
+    <meta
+        property="article:author" content="" />
+    <meta
+        property="article:published_time"
+        content='0001-01-01T00:00:00Z&#43;0000' />
+    
+    <meta property="og:url" content="https://example.com/search/" />
+    
+    
     <meta property="og:image"
-        content='https://example.com/img/icon.svg' />
+        content="https://example.com/img/icon.svg" />
+    
+        <meta property="og:description" content="" />
+    
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:domain"
       content='example.com'
 />
-<meta property="twitter:url" content="https://example.com/about/" />
+<meta property="twitter:url" content="https://example.com/search/" />
 
 
-    <meta name="twitter:title"
-        content='phasewalk' />
+    <meta name="twitter:title" content="Search" />
+    
+    
     
     <meta name="twitter:image"
-        content='https://example.com/img/icon.svg' />
+        content="https://example.com/img/icon.svg" />
+    
+        <meta name="twitter:description" content="" />
+    
 
 <link rel="manifest" href="/manifest/index.json" />
 </head>
@@ -121,19 +132,7 @@
 </div>
             </div>
         </div>
-        <div class="search">
-    <input id="searchbar" type="text" placeholder='Search' />
-    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
-</div>
-<script>
-    function newSearch() {
-        let term = searchbar.value.trim();
-        if (!term) return;
-        location.href = `/search?q=${term}`;
-    }
-    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
-</script>
-
+        
     </div>
     <div id="links">
         <a
@@ -191,32 +190,103 @@
 <div id="contentContainer">
                 <div id="content">
                     <main>
-    <h2>
-    
-    
-    
-    
-        Abouts
-    
-</h2>
-<ul class="list">
-    
-        
-            <li>
-                <div>
-                    <span class="date">
-    2023-06-29
-
-</span>
-                    <span>
-                        <a href="https://example.com/about/about/">About</a>
-                    </span>
-                </div>
-            </li>
-        
-    
-</ul>
-
+<noscript>
+    You need to enable JavaScript to be able to search.
+</noscript><div class="search">
+    <input id="searchbar" type="text" placeholder='Search' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+<div class="postlist gridView" id="postlist">
+</div><script>
+    function renderTags(tags) {
+        if (tags.length <= 0) return '';
+        let res = `| <span title='Tags'> </span>`;
+        for (let tag of tags) {
+            //                                        regular space
+            res += `<a href="/tags/${tag}">#${tag}</a>&#32;`;
+        }
+        return res;
+    }
+    function renderImage(image, link, alt) {
+        if (!image) return '';
+        return `<a href="${link}"><img src="${image}" alt="${alt}" /></a>`;
+    }
+    function renderSingleArticle(article) {
+        return `
+        <article class="card postlistitem">
+            <div>
+                <h2>
+                    <a href="${article.link}">${article.title}</a>
+                </h2>
+                <p class="date">
+                    <span title='Date'> </span>
+                    ${article.date}
+                    
+                        ${renderTags(article.tags)}
+                    
+                </p>
+                
+                    ${renderImage(article.image, article.link, article.imageAlt)}
+                
+                
+                    <div class="articlePreview">
+                        <p>${article.summary}</p>
+                        <p><a href="${article.link}">Continue reading </a></p>
+                    </div>
+                
+            </div>
+            <hr />
+        </article>
+        `;
+    }
+    function renderArticles(articles) {
+        let rendered = articles.map(a => renderSingleArticle(a)).join('\n');
+        document.getElementById('postlist').innerHTML += rendered;
+    }
+</script>
+<script>
+    function matchTags(page, term) {
+        for (let tag of page.tags) {
+            if (tag.includes(term)) return true;
+        }
+        return false;
+    }
+    function performSearch(term) {
+        document.getElementById('postlist').innerHTML = '';
+        term = term.toLowerCase();
+        fetch('/search/index.json').then(res => res.json())
+        .then(res => {
+            let articles = res.pages.filter(page => (
+                page.title.toLowerCase().includes(term) ||
+                matchTags(page, term) ||
+                page.text.includes(term)
+            ));
+            if (articles.length > 0) renderArticles(articles);
+            else document.getElementById('postlist').innerHTML = `
+                <h3>No results found</h3>
+            `;
+        });
+    }
+    var url = location.href;
+    var baseUrl = url.split('?')[0];
+    var searchbar = document.getElementById('searchbar');
+    if (url.includes('?')) {
+        var urlParams = new URLSearchParams(url.split('?')[1]);
+        if (urlParams.has('q')) {
+            let searchTerm = urlParams.get('q');
+            searchbar.value = searchTerm;
+            performSearch(searchTerm);
+        }
+    }
+</script>
 
                     </main><footer>
     <hr />

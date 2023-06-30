@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html class="" lang="en"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+    <link
+        rel="icon"
+        href='/1F987.svg'
+        type="image/svg+xml"
+    />
+
+<title>
+        
+            Hybrid Neural Collaboration  &ndash;
+        
+        phasewalk
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+        <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+    
+    
+    <link type="text/css" rel="stylesheet" href=https://example.com/css/styles.3a2588867760706cd8cffa7c8f3ec09614dc6edc5691e92add5929b4e7318dffac4251e5cc0029b95e1b099075aa175e4275cfa4e17618437954ad6527a2e79b.css integrity="sha512-OiWIhndgcGzYz/p8jz7AlhTcbtxWkekq3VkptOcxjf&#43;sQlHlzAApuV4bCZB1qhdeQnXPpOF2GEN5VK1lJ6Lnmw==" />
+<meta name="author" content="" />
+
+    
+        <meta name="keywords" content='ML, Music' />
+    
+    
+        <meta name="description" content="Music-based Recommendation Systems in production" />
+    
+
+<meta property="og:site_name"
+    content='phasewalk' />
+
+    <meta property="og:title" content="Hybrid Neural Collaboration" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="" />
+    <meta
+        property="article:published_time"
+        content='2023-06-28T12:30:21Z-1600' />
+    
+        
+            <meta property="article:tag" content="ML" />
+        
+            <meta property="article:tag" content="Music" />
+        
+    
+    <meta property="og:url" content="https://example.com/posts/hnc/" />
+    
+    
+        
+            
+        
+    
+    <meta property="og:image"
+        content="https://example.com/hnc.png" />
+    
+        <meta property="og:description" content="Music-based Recommendation Systems in production" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.com'
+/>
+<meta property="twitter:url" content="https://example.com/posts/hnc/" />
+
+
+    <meta name="twitter:title" content="Hybrid Neural Collaboration" />
+    
+    
+    
+        
+            
+        
+    
+    <meta name="twitter:image"
+        content="https://example.com/hnc.png" />
+    
+        <meta name="twitter:description" content="Music-based Recommendation Systems in production" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">phasewalk</a>
+                        
+                            <img src='/1F987.svg' alt='Logo'/>
+                        
+                    </h1>
+                    
+                        <label id="hamburger-menu" for="main-nav-toggler">
+                            &#xf85b;
+                        </label>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+        <input type="checkbox" id="main-nav-toggler" />
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+            <li><a href="/about/">About</a></li>
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Search' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://matrix.to/#/@phasewalk1:matrix.org">
+    
+    
+        <svg class='pseudofont' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path d='m0.61133 0v16h1.6498v-0.52679h-1.0762v-14.946h1.0762v-0.52679zm13.128 0v0.52679h1.0762v14.946h-1.0762v0.52679h1.6498v-16zm-6.8306 5.0527c-0.36785 0-0.69557 0.080576-0.98047 0.24219-0.28509 0.1618-0.52842 0.38949-0.73047 0.68359h-0.021484v-0.77148h-1.4512v5.7051h1.5371v-3.3105c-1e-7 -0.27957 0.039729-0.50668 0.11914-0.67969 0.079365-0.17278 0.17514-0.30442 0.28711-0.39648 0.11173-0.091827 0.22666-0.15439 0.3457-0.1875 0.11891-0.033206 0.21487-0.050781 0.28711-0.050781 0.24522 0 0.43037 0.042632 0.55664 0.12695 0.12617 0.084749 0.21736 0.19823 0.27148 0.33789 0.054214 0.1399 0.084431 0.29138 0.091797 0.45703 0.00694 0.16546 0.00977 0.33274 0.00977 0.50195v3.2012h1.5371v-3.1777c0-0.17658 0.013679-0.35257 0.039063-0.52539 0.025197-0.17301 0.074658-0.3266 0.15039-0.46289 0.075685-0.13596 0.18087-0.24728 0.31445-0.33203 0.13349-0.08432 0.309-0.12695 0.52539-0.12695 0.21639 0 0.38741 0.038028 0.51367 0.11133 0.12608 0.073632 0.22214 0.17384 0.28711 0.29883 0.06493 0.12527 0.1026 0.27229 0.11719 0.44141 0.01445 0.16935 0.02344 0.34786 0.02344 0.53906v3.2344h1.5371v-3.8184c0-0.36802-0.05142-0.68189-0.15234-0.94336-0.10121-0.26099-0.24168-0.47277-0.42188-0.63477-0.18039-0.16185-0.39609-0.27993-0.64844-0.35352-0.25272-0.073585-0.52842-0.10938-0.82422-0.10938-0.38965 0-0.72682 0.093949-1.0117 0.28516-0.28509 0.1913-0.50997 0.41395-0.67578 0.66406-0.15151-0.35325-0.3738-0.60033-0.66602-0.74023-0.29212-0.13966-0.61338-0.20898-0.9668-0.20898z' /></svg>
+    
+    <span>
+        Matrix
+    </span>
+</a>
+<a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/phasewalk1">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>Hybrid Neural Collaboration</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2023-06-28
+
+</p>
+    
+    
+    
+    
+    <div><blockquote>
+<p>This document is an evolving <strong>draft</strong>.</p>
+</blockquote>
+<p>Much of the thought process behind this article is unique to our application, and primarily, the task of integration with our backend architecture. This document concerns itself with laying out proposed implementation architectures and discussing how they would fit into our existing application. Some of this information might not be relevant to you if you&rsquo;re only interested in learning about <em>MBRS</em>’s (Music Based Recommendation Systems) and less about designing and deploying the pipeline that integrates into a distributed system. If you would just like to read about <em>MBRS</em>&rsquo;s, here are some relevant links that I recommend (no pun intended):</p>
+<h5 id="recommendation-systems-fundamentals">Recommendation Systems: Fundamentals</h5>
+<p><em>Fundamentalist approaches do not involve training a model</em>, they operate purely by data-driven algorithms.</p>
+<ul>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Collaborative_filtering">Collaborative Filtering</a></p>
+</li>
+<li>
+<p><a href="https://developers.google.com/machine-learning/recommendation/collaborative/matrix">Matrix Factorization</a></p>
+</li>
+</ul>
+<h5 id="modern-approaches">Modern Approaches:</h5>
+<p><em>I consider an approach to be modern if it <strong>blends</strong> fundamental approaches with deep learning models</em>.</p>
+<ul>
+<li>
+<p><a href="https://arxiv.org/pdf/1708.05031.pdf">Neural Collaborative Filtering</a></p>
+<ul>
+<li>Also alluded to in the <em>Collaborative Filtering</em> article</li>
+</ul>
+</li>
+<li>
+<p><a href="https://nbviewer.org/github/YIZHE12/music_recom/blob/master/music_recommendation_binary.ipynb">Hybrid Neural Collaboration</a></p>
+<ul>
+<li><em>I don&rsquo;t think they&rsquo;re actually called this, I just thought it sounded cool. It&rsquo;s a</em> <strong><em>hybrid</em></strong> <em>approach because it combines the ideas of collaboration with</em> <strong><em>content-based</em></strong> <em>recommendation</em>. <em>So, fuck it. I&rsquo;m coining the term <strong>hybrid neural collaboration</strong></em>.
+<ul>
+<li><em>The approach is also described in further detail in <a href="https://downloads.hindawi.com/archive/2009/421425.pdf?_ga=2.75799185.56191888.1687976765-564580601.1687976765">A Survey of Collaborative Filtering Techniques</a></em>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>There are <strong><em>many</em></strong> more modern implementations (CRNN&rsquo;s using computer vision on spectrogram images) and papers I could link to here, and I plan on updating this draft routinely; These are just the most relevant to us now.</p>
+<p>I think the term that best encapsulates the approach I’ve arrived at is Hybrid Neural Collaboration. It’s a hybrid approach because it combines <a href="https://en.wikipedia.org/wiki/Collaborative_filtering">collaborative filtering</a> with <a href="https://developers.google.com/machine-learning/recommendation/content-based/basics">content-based filtering</a>, and implements both components in separate neural networks. This is, by no means, a novel approach — see <a href="https://downloads.hindawi.com/archive/2009/421425.pdf?_ga=2.75799185.56191888.1687976765-564580601.1687976765">here</a> — rather, a term for describing the entire system pipeline in practice.</p>
+<h2 id="neural-collaborative-filtering-and-the-user-item-transaction-matrix">Neural Collaborative Filtering and The User-Item Transaction Matrix</h2>
+<p>The model architecture we have discussed previously (many months ago) was the <em>CRNN content-based filtering</em> approach. This approach is where we generate <em>spectrogram</em> images that embed information about the <em>content of the item</em>, and rely on <em>computer vision</em> in the convolutional layers to learn how to extract certain <em>features</em> from the raw wave information present in the spectrograms. This would introduce added overhead into our system, because we would likely have to set up <em>processing queues</em> to continuously analyze every new item that is written to the <em>S3 bucket</em>, then we&rsquo;d need to store the spectrograms somewhere too.</p>
+<p>We can avoid introducing compute overhead and <em>processing queue complexity</em> by ignoring <em>feature extraction</em> and <em>signal processing altogether</em>. <em>NCF</em> models are trained on simple <strong>vectors</strong> that contain <em>user-item interaction metadata</em>, and they learn the latent factors that represent the similarities between different users. So if <em>user1</em> likes <em>x</em>, <em>y</em>, and <em>z</em>, and <em>user2</em> likes <em>x</em> and <em>y</em>, they are <strong>likely</strong> to be recommended <em>z</em>.</p>
+<p>An example of a structure that acts as a single point in the training input data for an NCF <em>could</em> look like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#75715e">// The model learns to group users into similar taste categories,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// and can recommend users new items based on distance in the
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// vector space (euclidean or cosine similarity; usually)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> UserItemMetric
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> user_id;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> song_id;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> listen_count;
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h2 id="sparsity-and-the-cold-start-problem---where-hybrid-comes-in">Sparsity and The Cold Start Problem - Where Hybrid Comes In</h2>
+<p>A <em>hybrid collaboration</em> model introduces <em>content</em> metadata into the context of the NCF. This helps combat the <a href="https://en.m.wikipedia.org/wiki/Cold_start_(recommender_systems)#:~:text=Cold%20start%20is%20a%20potential,not%20yet%20gathered%20sufficient%20information.">cold start problem</a> wherein <a href="https://en.wikipedia.org/wiki/Sparse_matrix">sparsity</a> in the dataset can make it impossible to serve <em>good recommendations to new users</em> (sometimes called <em>Context-aware Collaborative Filtering</em>).</p>
+<blockquote>
+<blockquote>
+<p>Sparsity happens when there are <strong>many</strong> items in the dataset and <em>most users have only interacted with a <strong>few</strong> items</em> (implies many zeroes in the <em>user-item-transaction matrix</em>). This applies to our application.</p>
+</blockquote>
+</blockquote>
+<p>In order to tackle this problem and ensure our engine is useful for new users too, we must feed the model some context on the content of the items during training time. These can be discussed and tuned to what we think works best. They do not need to be raw features such as are commonly extracted from signal processing, rather, they can be simple metadata features (e.g. Title, Author, Length, Tags, etc.).</p>
+<h2 id="data--normalization-and-context-injection">Data  Normalization and Context-Injection</h2>
+<p>Now that we’ve introduced the basic concepts of the <em>hybrid neural collaboration</em> architecture, we can discuss applying it from the top down. As we mentioned above, we need <strong>both</strong> the user-item interaction metrics and metadata content from each item.</p>
+<p>Since i’m not sure what the schema for the Song records is now, just humor me with this hypothetical example of what types of metadata we could use.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> Song
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  string title;
+</span></span><span style="display:flex;"><span>  string release;
+</span></span><span style="display:flex;"><span>  string artist_name;
+</span></span><span style="display:flex;"><span>  string year;
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>Now, to train the model, we‘ll create dataframes over the two datasets. We’ll then merge the two so that they look something like this:
+![[Pasted image 20230628025222.jpg]]</p>
+<p>Since the <code>listen_count</code> field is a highly variant field (can range from 0 to 1,000+) we will want to normalize it across the dataset. We can do this using <a href="https://www.statology.org/z-score-normalization/">zscore normalization</a> which is simple in <em>numpy</em>. We will also likely want to drop any rows with abnormally high play counts (above 20,000 for example) before performing normalization so that artificially inflated values don’t skew the deviation maliciously.</p>
+<p>Once we have this normalized and merged dataframe, we have successfully completed the preprocessing stage and we are ready to train the model.</p>
+<h2 id="ncf---model-architecture">NCF - Model Architecture</h2>
+<h2 id="cbf---model-architecture">CBF - Model Architecture</h2>
+</div>
+</article>
+
+    
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/ml">#ML</a>
+        
+            <a
+                
+                href="/tags/music">#Music</a>
+        
+    </p>
+
+
+
+
+<script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+
+<div id="ficurinia-cactus-comments"></div>
+
+<script>
+initComments({
+    node: document.getElementById("ficurinia-cactus-comments"),
+    defaultHomeserverUrl: 'https:\/\/matrix.cactus.chat:8448',
+    serverName: 'cactus.chat',
+    siteName: "phasewalk.xyz",
+    commentSectionId: "2e1519efe2c10852417f9a9b96eea06b"
+})
+</script>
+
+
+    
+    
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; Copyleft
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

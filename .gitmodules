@@ -1,3 +1,6 @@
-[submodule "phasewalk1.me"]
-	path = phasewalk1.me
-	url = https://github.com/phasewalk1/phasewalk1.me
+[submodule "themes/xmin"]
+	path = themes/xmin
+	url = https://github.com/yihui/hugo-xmin
+[submodule "themes/ficurinia"]
+	path = themes/ficurinia
+	url = https://gitlab.com/gabmus/hugo-ficurinia

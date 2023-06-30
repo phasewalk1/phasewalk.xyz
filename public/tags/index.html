@@ -1,115 +1,238 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <title>phasewalk</title>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="theme-color" content="#000084" />
-    <link rel="icon" href="https://phasewalk.xyz/favicon.ico">
-    <link rel="canonical" href="https://phasewalk.xyz">
+<html class="" lang="en"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    
+        
+          <link href="https://example.com/tags/index.xml" rel="alternate" type="application/rss+xml" title="phasewalk" />
+          <link href="https://example.com/tags/index.xml" rel="feed" type="application/rss+xml" title="phasewalk" />
+        
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+    <link
+        rel="icon"
+        href='/1F987.svg'
+        type="image/svg+xml"
+    />
+
+<title>
+        
+            Tags  &ndash;
+        
+        phasewalk
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+        <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
     
     
+    <link type="text/css" rel="stylesheet" href=https://example.com/css/styles.3a2588867760706cd8cffa7c8f3ec09614dc6edc5691e92add5929b4e7318dffac4251e5cc0029b95e1b099075aa175e4275cfa4e17618437954ad6527a2e79b.css integrity="sha512-OiWIhndgcGzYz/p8jz7AlhTcbtxWkekq3VkptOcxjf&#43;sQlHlzAApuV4bCZB1qhdeQnXPpOF2GEN5VK1lJ6Lnmw==" />
+<meta name="author" content="" />
+
+    
+
+<meta property="og:site_name"
+    content='phasewalk' />
+
+    <meta property="og:title"
+        content='phasewalk' />
+    
+    <meta property="og:type" content="blog" />
+    <meta property="og:image"
+        content='https://example.com/img/icon.svg' />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.com'
+/>
+<meta property="twitter:url" content="https://example.com/tags/" />
+
+
+    <meta name="twitter:title"
+        content='phasewalk' />
+    
+    <meta name="twitter:image"
+        content='https://example.com/img/icon.svg' />
+
+<link rel="manifest" href="/manifest/index.json" />
 </head>
+
+
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="https://phasewalk.xyz">phasewalk</a>
-            <div class="nav-collapse collapse">
-                <ul class="nav">
-                    
-                    
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">phasewalk</a>
                         
-                            <li>
-                                <a href="/post/">
-                                    
-                                    <span>All posts</span>
-                                </a>
-                            </li>
+                            <img src='/1F987.svg' alt='Logo'/>
                         
+                    </h1>
                     
-                        
-                            <li>
-                                <a href="/card/">
-                                    
-                                    <span>Card</span>
-                                </a>
-                            </li>
-                        
+                        <label id="hamburger-menu" for="main-nav-toggler">
+                            &#xf85b;
+                        </label>
                     
-                </ul>
+                </div>
+                <div id="wide_nav"><nav>
+    
+        <input type="checkbox" id="main-nav-toggler" />
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+            <li><a href="/about/">About</a></li>
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
             </div>
         </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Search' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
     </div>
-</nav><div id="content" class="container">
-<article class="row-fluid navmargin">
-    <header class="page-header">
-        <h1>Tags</h1>
-    </header>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
     
     
-</article>
-<ul>
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
 
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://matrix.to/#/@phasewalk1:matrix.org">
+    
+    
+        <svg class='pseudofont' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path d='m0.61133 0v16h1.6498v-0.52679h-1.0762v-14.946h1.0762v-0.52679zm13.128 0v0.52679h1.0762v14.946h-1.0762v0.52679h1.6498v-16zm-6.8306 5.0527c-0.36785 0-0.69557 0.080576-0.98047 0.24219-0.28509 0.1618-0.52842 0.38949-0.73047 0.68359h-0.021484v-0.77148h-1.4512v5.7051h1.5371v-3.3105c-1e-7 -0.27957 0.039729-0.50668 0.11914-0.67969 0.079365-0.17278 0.17514-0.30442 0.28711-0.39648 0.11173-0.091827 0.22666-0.15439 0.3457-0.1875 0.11891-0.033206 0.21487-0.050781 0.28711-0.050781 0.24522 0 0.43037 0.042632 0.55664 0.12695 0.12617 0.084749 0.21736 0.19823 0.27148 0.33789 0.054214 0.1399 0.084431 0.29138 0.091797 0.45703 0.00694 0.16546 0.00977 0.33274 0.00977 0.50195v3.2012h1.5371v-3.1777c0-0.17658 0.013679-0.35257 0.039063-0.52539 0.025197-0.17301 0.074658-0.3266 0.15039-0.46289 0.075685-0.13596 0.18087-0.24728 0.31445-0.33203 0.13349-0.08432 0.309-0.12695 0.52539-0.12695 0.21639 0 0.38741 0.038028 0.51367 0.11133 0.12608 0.073632 0.22214 0.17384 0.28711 0.29883 0.06493 0.12527 0.1026 0.27229 0.11719 0.44141 0.01445 0.16935 0.02344 0.34786 0.02344 0.53906v3.2344h1.5371v-3.8184c0-0.36802-0.05142-0.68189-0.15234-0.94336-0.10121-0.26099-0.24168-0.47277-0.42188-0.63477-0.18039-0.16185-0.39609-0.27993-0.64844-0.35352-0.25272-0.073585-0.52842-0.10938-0.82422-0.10938-0.38965 0-0.72682 0.093949-1.0117 0.28516-0.28509 0.1913-0.50997 0.41395-0.67578 0.66406-0.15151-0.35325-0.3738-0.60033-0.66602-0.74023-0.29212-0.13966-0.61338-0.20898-0.9668-0.20898z' /></svg>
+    
+    <span>
+        Matrix
+    </span>
+</a>
+<a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/phasewalk1">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
 
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+    <h2>
+    
+    
+    
+    
+        Tags:
+    
+</h2>
+<ul class="list">
+    
+        
+        
+            <li>
+                <a href="https://example.com/tags/misc/">#MISC</a>
+            </li>
+        
+            <li>
+                <a href="https://example.com/tags/ml/">#ML</a>
+            </li>
+        
+            <li>
+                <a href="https://example.com/tags/music/">#Music</a>
+            </li>
+        
+    
 </ul>
 
-        </div><footer class="container">
-    <hr class="soften">
-    <p>
-    phasewalk | 
 
-&copy; 
-<a href="https://lainchan.org" target="_blank">
-    LAINCHAN
-</a>
-<span id="thisyear">2023</span>
+                    </main><footer>
+    <hr />
 
-    | built with love &lt;3
-
-
-</p>
-    <p class="text-center">
-        
-        
-        
-        
-        
-        
-    </p>
+<p><small>
+        2023 &copy; Copyleft
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
 </footer>
+</div>
+            </div>
+        </div>
 
-</body><link rel="stylesheet" href="/css/bootstrap.css">
-<link rel="stylesheet" href="/css/bootstrap-responsive.css">
-<link rel="stylesheet" href="/css/style.css">
 
-<script src="/js/jquery.js"></script>
-<script src="/js/bootstrap-386.js"></script>
-<script src="/js/bootstrap-transition.js"></script>
-<script src="/js/bootstrap-alert.js"></script>
-<script src="/js/bootstrap-modal.js"></script>
-<script src="/js/bootstrap-dropdown.js"></script>
-<script src="/js/bootstrap-scrollspy.js"></script>
-<script src="/js/bootstrap-tab.js"></script>
-<script src="/js/bootstrap-tooltip.js"></script>
-<script src="/js/bootstrap-popover.js"></script>
-<script src="/js/bootstrap-button.js"></script>
-<script src="/js/bootstrap-collapse.js"></script>
-<script src="/js/bootstrap-carousel.js"></script>
-<script src="/js/bootstrap-typeahead.js"></script>
-<script src="/js/bootstrap-affix.js"></script>
-<script>
-    _386 = { 
-        fastLoad: false ,
-        onePass: false , 
-        speedFactor: 1 
-    };
-
-    
-    function ThisYear() {
-        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
-    };
-</script>
+</body>
 </html>

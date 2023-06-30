@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Music on phasewalk</title>
+    <link>https://example.com/tags/music/</link>
+    <description>Recent content in Music on phasewalk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyleft</copyright>
+    <lastBuildDate>Wed, 28 Jun 2023 12:30:21 -1600</lastBuildDate><atom:link href="https://example.com/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hybrid Neural Collaboration</title>
+      <link>https://example.com/posts/hnc/</link>
+      <pubDate>Wed, 28 Jun 2023 12:30:21 -1600</pubDate>
+      
+      <guid>https://example.com/posts/hnc/</guid>
+      <description>This document is an evolving draft.
+Much of the thought process behind this article is unique to our application, and primarily, the task of integration with our backend architecture. This document concerns itself with laying out proposed implementation architectures and discussing how they would fit into our existing application. Some of this information might not be relevant to you if you&amp;rsquo;re only interested in learning about MBRS’s (Music Based Recommendation Systems) and less about designing and deploying the pipeline that integrates into a distributed system.</description>
+    </item>
+    
+  </channel>
+</rss>
